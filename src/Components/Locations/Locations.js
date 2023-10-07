@@ -23,7 +23,7 @@ const Locations = () => {
         <ul className="location-lists grid">
           {locationList.map((item, index) => {
             return (
-              <li className="list-of-locations">
+              <li key={index} className="list-of-locations">
                 <Link className="location-name" to="/">
                   {item.locationName}
                 </Link>
